@@ -33,7 +33,7 @@ else:
     height = st.number_input('Enter your height in Feet')
 try:
         bmi = weight / (((height/3.28))**2)
-    except:
+except:
         st.text("Enter some value of height")
     
 if(st.button('Calculate BMI')):
