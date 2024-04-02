@@ -35,7 +35,8 @@ try:
         bmi = weight / (((height/3.28))**2)
     except:
         st.text("Enter some value of height")
-      if(st.button('Calculate BMI')):
+    
+if(st.button('Calculate BMI')):
 
     # print the BMI INDEX
     st.text("Your BMI Index is {}.".format(bmi))
