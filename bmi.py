@@ -25,15 +25,13 @@ elif(status == 'meters'):
 
     try:
         bmi = weight / (height ** 2)
-      except:
+    except:
         st.text("Enter some value of height")
 
 else:
     # take height input in feet
     height = st.number_input('Enter your height in Feet')
-
-    # 1 meter = 3.28
-    try:
+try:
         bmi = weight / (((height/3.28))**2)
     except:
         st.text("Enter some value of height")
